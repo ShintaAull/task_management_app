@@ -1,0 +1,18 @@
+boderradius.circular :garis  lengkungan sluruh
+boderradiu.only : garis  lengkungan trtentu
+tofleft:kiriatas
+buttomleft:kiribawah
+tofright:kananatas
+buttomright:kananbawah
+
+
+border : garis tepi
+radius : garis lengkungan
+string : 'kata yang ditampilin
+
+tampilkan kata :text
+style :mengubah warna,ukuran dalam kata
+crossAxisalligment: sumbu vertiakl atau Y
+mainaxisaligment: sumbu horizontal atau x
+padding : jarak dari garis tepi
+aligment : memilih rata kanan atay rata kiri
