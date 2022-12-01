@@ -60,7 +60,7 @@ class HomeView extends GetView<HomeController> {
                                 ),
                               ),
                               const SizedBox(
-                                height: 9,
+                                height: 5,
                               ),
                               const Text(
                                 'home',
