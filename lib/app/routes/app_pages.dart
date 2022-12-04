@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:task_management_app/app/modules/home/views/home_view.dart';
 
 import '../modules/friends/bindings/friends_binding.dart';
 import '../modules/friends/views/friends_view.dart';
@@ -21,7 +22,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => const HomeView(),
+      page: () => HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
