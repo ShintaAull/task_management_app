@@ -6,6 +6,7 @@ import 'package:task_management_app/app/utils/widget/SideBar.dart';
 import 'package:task_management_app/app/utils/widget/header.dart';
 import 'package:task_management_app/app/utils/style/AppColors.dart';
 
+import '../../../utils/widget/myFriends.dart';
 import '../../../utils/widget/upcomingTask.dart';
 import '../controllers/home_controller.dart';
 
@@ -474,44 +475,16 @@ class HomeView extends GetView<HomeController> {
                               ],
                             ),
                           ),
-                          Expanded(
-                            child: Row(
-                              children: [
-                                const UpcomingTask(),
-                                Expanded(
-                                  child: Column(
-                                    children: [
-                                      Row(
-                                        children: [
-                                          const Text(
-                                            'My Friends',
-                                            style: TextStyle(
-                                              color: AppColors.primaryText,
-                                              fontSize: 30,
-                                            ),
-                                          ),
-                                          const Text(
-                                            'More',
-                                            style: TextStyle(
-                                              color: AppColors.primaryText,
-                                              fontSize: 30,
-                                            ),
-                                          ),
-                                          Icon(
-                                            Icons.forward,
-                                            color: AppColors.primaryText,
-                                          )
-                                        ],
-                                      ),
-                                      const SizedBox(
-                                        height: 20,
-                                      ),
+                          !context.isPhone
+                              ? Expanded(
+                                  child: Row(
+                                    children: const [
+                                      UpcomingTask(),
+                                      MyFriends(),
                                     ],
                                   ),
-                                ),
-                              ],
-                            ),
-                          ),
+                                )
+                              : const UpcomingTask(),
                         ]),
                   ),
                 )
