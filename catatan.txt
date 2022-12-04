@@ -15,3 +15,6 @@ style :mengubah warna,ukuran dalam kata
 crossAxisalligment: sumbu vertiakl atau Y
 mainaxisaligment: sumbu horizontal atau x
 padding : jarak dari garis tepi
+aligment : memilih rata kanan atay rata kiri
+
+detik 18:37 eror padahal sudah disamakan dengan video kenapa?

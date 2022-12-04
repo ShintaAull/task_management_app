@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
+import 'package:task_management_app/app/modules/home/views/home_view.dart';
 
 import '../modules/friends/bindings/friends_binding.dart';
 import '../modules/friends/views/friends_view.dart';
 import '../modules/home/bindings/home_binding.dart';
-import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
@@ -16,13 +16,15 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.LOGIN;
 
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => const HomeView(),
+      page: () => HomeView(),
       binding: HomeBinding(),
+      transition: Transition.upToDown,
+      // transitionDuration: Duration(seconds: 1)
     ),
     GetPage(
       name: _Paths.LOGIN,
@@ -31,17 +33,17 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.FRIENDS,
-      page: () => const FriendsView(),
+      page: () => FriendsView(),
       binding: FriendsBinding(),
     ),
     GetPage(
       name: _Paths.TASK,
-      page: () => const TaskView(),
+      page: () => TaskView(),
       binding: TaskBinding(),
     ),
     GetPage(
       name: _Paths.PROFILE,
-      page: () => const ProfileView(),
+      page: () => ProfileView(),
       binding: ProfileBinding(),
     ),
   ];
