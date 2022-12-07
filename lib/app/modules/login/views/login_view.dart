@@ -117,7 +117,7 @@ class LoginView extends GetView<LoginController> {
                       onPressed: () => Get.toNamed(Routes.HOME),
                       label: const Text('Sign In With Google'),
                       icon: const Icon(
-                        Ionicons.logo_google,
+                        Icons.key,
                         color: Colors.white,
                       ),
                     )
